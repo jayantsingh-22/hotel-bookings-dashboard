@@ -167,7 +167,7 @@ const CountryColumnChart: React.FC<CountryColumnChartProps> = ({ data }) => {
             offsetY: -20,
             style: {
               colors: ["#E9967A"],
-              fontSize: 12,
+              fontSize: "12",
             },
           },
         }}
