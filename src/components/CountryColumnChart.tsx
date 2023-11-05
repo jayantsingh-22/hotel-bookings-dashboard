@@ -130,8 +130,7 @@ const CountryColumnChart: React.FC<CountryColumnChartProps> = ({ data }) => {
               }
             },
             title: {
-              text: "Countries",
-              position: "bottom",
+              text: "Countries",          
             },
           },
           yaxis: {
