@@ -1,5 +1,5 @@
 import React from "react";
-import ApexChart from "react-apexcharts";
+import ReactApexChart from "react-apexcharts";
 import "../style/ColumnChart.css";
 
 interface CountryColumnChartProps {
@@ -110,7 +110,7 @@ const CountryColumnChart: React.FC<CountryColumnChartProps> = ({ data }) => {
   return (
     <div className="ColumnChartContainer">
       <h2>Country Column Chart</h2>
-      <ApexChart
+      <ReactApexChart
         type="bar"
         series={[
           {
