@@ -139,49 +139,47 @@ const LineChart: React.FC<LineChartProps> = ({ data }) => {
     },
   ];
 
-  const options = {
-    chart: {
-      id: "visitors per day",
-    },
-    stroke: {
-      curve: "smooth",
-    },
-    xaxis: {
-      categories: [...visitorData.dates],
-      labels: {
-        style:{
-          colors: "#FAEBD7"
-        }
-      }
-    },
-    yaxis: {
-      title: {
-        text: "Visitor_Count",
-        style:{
-          color: "#FFFFFF"
-        }
-      },
-      labels:{
-        style:{
-          colors: "#FAEBD7"
-        }
-      }
-    },
-    colors: ["#34A0A4"],
-    title: {
-      text: `VISITORS PER DAY`,
-      style: {
-        fontSize: "20",
-        color: "#FFFFFF"
-      },
-    },
-  };
-
   return (
     <div className="line-chart" >
       <h2>Time Series Chart</h2>
       <ReactApexChart
-        options={options}
+        options={{
+          chart: {
+            id: "visitors per day",
+          },
+          stroke: {
+            curve: "smooth",
+          },
+          xaxis: {
+            categories: [...visitorData.dates],
+            labels: {
+              style:{
+                colors: "#FAEBD7"
+              }
+            }
+          },
+          yaxis: {
+            title: {
+              text: "Visitor_Count",
+              style:{
+                color: "#FFFFFF"
+              }
+            },
+            labels:{
+              style:{
+                colors: "#FAEBD7"
+              }
+            }
+          },
+          colors: ["#34A0A4"],
+          title: {
+            text: `VISITORS PER DAY`,
+            style: {
+              fontSize: "20",
+              color: "#FFFFFF"
+            },
+          },
+        }}
         series={series}
         type="line"
         height={255}
