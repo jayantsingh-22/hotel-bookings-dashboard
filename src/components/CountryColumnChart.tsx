@@ -109,7 +109,7 @@ const CountryColumnChart: React.FC<CountryColumnChartProps> = ({ data }) => {
 
   return (
     <div className="ColumnChartContainer">
-      <h2>Country Column Chart</h2>
+      <h3>Country Column Chart</h3>
       <ReactApexChart
         type="bar"
         series={[
@@ -150,7 +150,7 @@ const CountryColumnChart: React.FC<CountryColumnChartProps> = ({ data }) => {
           title: {
             text: `VISITORS PER COUNTRY`,
             style: {
-              fontSize: "20",
+              fontSize: "15",
               color: "#FFFFFF",
             },
           },
@@ -172,7 +172,7 @@ const CountryColumnChart: React.FC<CountryColumnChartProps> = ({ data }) => {
           },
         }}
         height={255}
-        width={600}
+        width={550}
       />
     </div>
   );

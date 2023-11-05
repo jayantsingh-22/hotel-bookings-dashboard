@@ -181,7 +181,7 @@ const SparklineChart: React.FC<SparklineChartProps> = ({ data }) => {
               title: {
                 text: `ADULT VISITORS PER DAY`,
                 style: {
-                  fontSize: "20",
+                  fontSize: "15",
                   color: "#FFFFFF"
                 },
               },
@@ -194,8 +194,8 @@ const SparklineChart: React.FC<SparklineChartProps> = ({ data }) => {
               },
             ]}
             type="area"
-            height={255}
-            width={600}
+            height={275}
+            width={550}
           />
         </div>
 
@@ -233,7 +233,7 @@ const SparklineChart: React.FC<SparklineChartProps> = ({ data }) => {
               title: {
                 text: `CHILD VISITORS PER DAY`,
                 style: {
-                  fontSize: "20",
+                  fontSize: "15",
                   color: "#FFFFFF"
                 },
               },
@@ -246,8 +246,8 @@ const SparklineChart: React.FC<SparklineChartProps> = ({ data }) => {
               },
             ]}
             type="area"
-            height={255}
-            width={600}
+            height={275}
+            width={550}
           />
         </div>
       </div>

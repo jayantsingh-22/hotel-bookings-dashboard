@@ -141,7 +141,7 @@ const LineChart: React.FC<LineChartProps> = ({ data }) => {
 
   return (
     <div className="line-chart" >
-      <h2>Time Series Chart</h2>
+      <h3>Time Series Chart</h3>
       <ReactApexChart
         options={{
           chart: {
@@ -175,7 +175,7 @@ const LineChart: React.FC<LineChartProps> = ({ data }) => {
           title: {
             text: `VISITORS PER DAY`,
             style: {
-              fontSize: "20",
+              fontSize: "15",
               color: "#FFFFFF"
             },
           },
@@ -183,7 +183,7 @@ const LineChart: React.FC<LineChartProps> = ({ data }) => {
         series={series}
         type="line"
         height={255}
-        width={600}
+        width={550}
         data-testid="series-chart-header"
       />
     </div>
