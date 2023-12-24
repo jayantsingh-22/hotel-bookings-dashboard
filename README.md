@@ -1,3 +1,6 @@
+#About the application:
+This web application displays graphical data based on a hotel bookings data within a specified date range using ApexCharts library.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
